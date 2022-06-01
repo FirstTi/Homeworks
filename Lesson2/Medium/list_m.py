@@ -3,3 +3,16 @@
 # 1)меньше 30
 # 2)деляться на 3 без остатка.
 # все остальные элементы списка необходимо просуммировать и вывести конечный результат
+lst = [11, 5, 8, 32, 15, 3, 20, 132, 21, 4, 555, 9, 20]
+counter = 0
+elements = []
+
+for element in lst:
+    if element < 30 and element % 3 == 0:
+        elements.append(element)
+    else:
+        counter += element
+
+print(elements)
+print(f"Сумма остальных элементов равна {counter}")
+        
